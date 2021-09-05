@@ -1,0 +1,58 @@
+.container{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#myModal{
+	width: 600px;
+	/*background: green;*/
+	text-align: center;
+	box-sizing: border-box;
+	/*padding: 10px;*/
+	border: 1px solid #333;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+#myModal .modal-top, #myModal .modal-bottom{
+	width: 100%;
+	position: relative;
+}
+#myModal .modal-top #closeBtn{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: transparent;
+	border:0px;
+	padding: 4px 8px;
+	color: #333;
+	cursor: pointer;
+}
+
+#myModal:hover .modal-top #closeBtn{
+	background: red;
+	color: #fff;
+}
+#myModal .modal-bottom #startNowBtn{
+	position: absolute;
+	top: -40px;
+	right: 3px;
+	background: rgba(0,0,0,0.3);
+	border:0px;
+	padding: 7px 15px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 8px;
+}
+
+#myModal:hover .modal-bottom #startNowBtn{
+	background: green;
+	color: #fff;
+}
+#myModal .modal-content img{
+	width: 100%;
+}
